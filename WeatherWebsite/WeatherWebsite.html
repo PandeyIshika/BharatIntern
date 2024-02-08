@@ -74,7 +74,6 @@
 			position: relative;
 			z-index: 1;
 			color: white;
-
 		}
 		.frontpage-contents::before
 		{
@@ -370,17 +369,6 @@
 			animation: divanim 1.5s ease-in-out;
 			opacity: 0;
 		}
-		@keyframes divanim
-		{
-			0%
-			{
-				transform: translateY(0);
-			}
-			100%
-			{
-				transform: translateY(-100%);
-			}
-		}
 		.weather-container.active
 		{
 			transform: translateY(-100%);
@@ -412,7 +400,7 @@
 			<i class='bx bxs-map'></i>
 			<h3>-----</h3>
 			</div>
-			<p>Date Month Year</p>
+			<p>Year Month  Date</p>
 		</div>
 		<div class="weather-Degree">
 			<h1>--°</h1>
@@ -422,7 +410,7 @@
 		<div class="weather-pallete">
 			<div class="pallete-data">
 				<i class='bx bx-water'></i>
-				<small>-- M/B</small>
+				<small>-- mbar</small>
 				<span>Pressure</span>
 			</div>
 			<div class="pallete-data">
@@ -432,7 +420,7 @@
 			</div>
 			<div class="pallete-data">
 				<i class='bx bx-wind' ></i>
-				<small>-- M/S</small>
+				<small>-- mph</small>
 				<span>Wind Speed</span>
 			</div>
 		</div>
@@ -440,7 +428,7 @@
 
 
 	<div class="swiper mySwiper weather-forecasts">
-		<h3>5 Days Weather Forecast</h3>
+		<h3>5 Day Forecast</h3>
 		<ul class="swiper-wrapper weather-ul">
 			<li class="swiper-slide weather-data">
 				<span>-- -- --</span>
@@ -519,7 +507,7 @@
 			<div class="weather-pallete">
 			<div class="pallete-data">
 				<i class='bx bx-water'></i>
-				<small>${weatherItem2.main.pressure} M/B</small>
+				<small>${weatherItem2.main.pressure} mbar</small>
 				<span>Pressure</span>
 			</div>
 			<div class="pallete-data">
@@ -529,8 +517,8 @@
 			</div>
 			<div class="pallete-data">
 				<i class='bx bx-wind' ></i>
-				<small>${weatherItem2.wind.speed} M/S</small>
-				<span>wind Speed</span>
+				<small>${weatherItem2.wind.speed} mph</small>
+				<span>Wind Speed</span>
 			</div>
 			</div>
 			`
